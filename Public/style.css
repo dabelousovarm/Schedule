@@ -1,0 +1,128 @@
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.top-menu {
+  display: flex;
+  padding: 28px;
+  min-height: 80px;
+  box-sizing: border-box;
+  
+  background: rgb(186, 223, 255);
+  width: 100%;
+}
+
+.top-menu__spacer {
+  flex: 1 1 auto;
+}
+
+.main {
+  margin: 0 auto;
+  padding: 24px;
+  flex: 1 1 auto;
+  width: 100%;
+  box-sizing: border-box;
+  /* display: grid; */
+  /* gap: 16px; */
+}
+
+.heading {
+  font-size: 24px;
+  text-align: center;
+  margin: 1em;
+}
+
+.schedule-form {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 1%;
+}
+
+.schedule-form__tb {
+  text-align:left;
+  border-spacing: 5px;
+  background: rgb(212, 235, 255);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.schedule-form__tb_data{
+  background: rgb(164, 189, 255);
+  padding: 10px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.schedule-form__tb_heading {
+  font-size: 18px;
+}
+
+.schedule-form__recording {
+  text-align: center;
+  text-align: center;
+}
+
+.schedule-form__recording_btn {
+  border: 5px solid rgb(164, 189, 255);;
+  width: 150px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  height: 45px;
+  border-radius: 20px;
+  background: rgb(186, 223, 255);
+  margin-bottom: 10px;
+}
+
+.schedule-form__recording_message {
+  height: 165px;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgb(186, 223, 255);
+}
+
+.dropbtn {
+  color: black;
+  border: none;
+  font-weight: bold;
+  align-items: center;
+  background-color: rgb(164, 189, 255);;
+  width: 120px;
+  height: 25px;
+}
+
+.top-menu__account-settings {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 120px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
