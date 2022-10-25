@@ -17,9 +17,13 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 28px;
   min-height: 80px;
   box-sizing: border-box;
-  
-  background: rgb(186, 223, 255);
+  background: linear-gradient(
+    110deg,
+    rgb(164, 189, 255) 24%,
+    rgb(227, 168, 214) 100%
+  );
   width: 100%;
+  align-items: center;
 }
 
 .top-menu__spacer {
@@ -28,7 +32,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .main {
   margin: 0 auto;
-  padding: 24px;
+  padding: 40px;
   flex: 1 1 auto;
   width: 100%;
   box-sizing: border-box;
@@ -37,6 +41,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .heading {
+  display: block;
   font-size: 24px;
   text-align: center;
   margin: 1em;
@@ -45,12 +50,10 @@ h1, h2, h3, h4, h5, h6, p {
 .schedule-form {
   display: flex;
   justify-content: center;
-  gap: 5%;
-  margin-top: 1%;
+  align-items: center;
 }
 
 .schedule-form__tb {
-  text-align:left;
   border-spacing: 5px;
   background: rgb(212, 235, 255);
   border-radius: 20px;
@@ -69,13 +72,19 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 18px;
 }
 
-.schedule-form__recording {
-  text-align: center;
+.schedule-form__reg {
   text-align: center;
 }
 
-.schedule-form__recording_btn {
-  border: 5px solid rgb(164, 189, 255);;
+.schedule-form__reg2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule-form__reg_btn {
+  border: 1px solid rgb(164, 189, 255);;
   width: 150px;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -83,24 +92,20 @@ h1, h2, h3, h4, h5, h6, p {
   height: 45px;
   border-radius: 20px;
   background: rgb(186, 223, 255);
-  margin-bottom: 10px;
-}
-
-.schedule-form__recording_message {
-  height: 165px;
-  padding: 10px;
-  border-radius: 20px;
-  background: rgb(186, 223, 255);
+  margin-top: 24px;
 }
 
 .dropbtn {
   color: black;
+  border-radius: 20px;
   border: none;
   font-weight: bold;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
   align-items: center;
-  background-color: rgb(164, 189, 255);;
+  background-color: rgb(164, 189, 255);
   width: 120px;
-  height: 25px;
+  height: 40px;
 }
 
 .top-menu__account-settings {
@@ -111,10 +116,14 @@ h1, h2, h3, h4, h5, h6, p {
 .dropdown-content {
   display: none;
   position: absolute;
-  width: 120px;
+  justify-content: center;
+  width: 100px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .dropdown-content a {
@@ -124,5 +133,39 @@ h1, h2, h3, h4, h5, h6, p {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #ddd; border-radius: 10px;}
 .dropdown:hover .dropdown-content {display: block;}
+
+.schedule-form__reg_head {
+  margin-bottom: 5px;
+}
+
+.schedule-form__reg_content {
+  border-radius: 5px;
+  border: none;
+  width: 165px;
+  margin-bottom: 10px;
+}
+
+.schedule-form__reg {
+  background: rgb(164, 189, 255);
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  width: 250px;
+  margin: auto;
+}
+
+.input-date {
+  background: rgb(164, 189, 255);
+  border: none;
+  border-radius: 5px;
+  height: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.date {
+  font-family: 'Roboto', sans-serif;
+}

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Авторизация</title>
+  <title>Расписание</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
@@ -21,14 +21,17 @@
         <button class="dropbtn">Петров П. П.</button>
         <div class="dropdown-content">
           <span>Количество доступных занятий: 6</span>
-          <a href="#" target="_blank">Выход</a>
+          <a href="../authorization/authorization.html">Выход</a>
         </div>
       </div>
     </div>
-    <!-- автор24)))) -->
-    </div>
   </header>
   <div class="main">
+    <form>
+      <p class="date">Выберите дату: <input type="date">
+        <input type="submit" value="Выбрать" class="input-date">
+      </p>
+    </form>
     <h1 class="heading">Расписание:</h1>
     <div class="schedule-form">
       <table class="schedule-form__tb">
@@ -58,10 +61,32 @@
           <td class="schedule-form__tb_data">Renault Logan</td>
         </tr>
       </table>
-      <div class="schedule-form__recording">
-        <button class="schedule-form__recording_btn">Записаться</button>
-        <!-- <div class="schedule-form__recording_message">Message</div> -->
-      </div>
+    </div>
+    <!-- <h1 class="heading">Запись на занятие</h1>
+    <div class="schedule-form__reg">
+      <h3 class="schedule-form__reg_head">Время:</h3>
+      <select class="schedule-form__reg_content">
+        <option selected class="schedule-form__reg_content-selected">Выберите время</option>
+        <option value="1">14:00</option>
+        <option value="2">18:00</option>
+        <option value="3">19:00</option>
+      </select>
+      <h3 class="schedule-form__reg_head">Инстуктор:</h3>
+      <select class="schedule-form__reg_content">
+        <option selected class="schedule-form__reg_content-selected">Выберите инстуктора</option>
+        <option value="1">Первый</option>
+        <option value="2">Второй</option>
+        <option value="3">Третий</option>
+      </select>
+      <h3 class="schedule-form__reg_head">Автомобиль:</h3>
+      <select class="schedule-form__reg_content">
+        <option selected class="schedule-form__reg_content-selected">Выберите автомобиль</option>
+        <option value="1">Раз</option>
+        <option value="2">Два</option>
+      </select>
+    </div> -->
+    <div class="schedule-form__reg2">
+      <button class="schedule-form__reg_btn">Записаться</button>
     </div>
   </div>
 </body>
